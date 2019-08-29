@@ -8,9 +8,11 @@ import {
 import Home from "../Routes/Home";
 import TV from "../Routes/TV";
 import Search from "../Routes/Search";
+import Header from "../Components/Header.js";
 
 export default () => (
   <Router>
+    <Header />
     {/* Switch -> 한번에 하나만 route 되도록 */}
     <Switch>
       <Route path="/" exact component={Home} />
